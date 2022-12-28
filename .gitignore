@@ -1,3 +1,4 @@
 .ssh
 .cache
 .vscode-server
+.data
