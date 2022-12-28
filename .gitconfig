@@ -1,0 +1,9 @@
+[core]
+	editor = \"C:\\Users\\amont\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[credential]
+	helper = "!f() { /root/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node /tmp/vscode-remote-containers-58a81c6a7170181fc5605431a3bf39dfbe7a8107.js $*; }; f"
+[init]
+	defaultBranch = master
+[user]
+	email = amontenegro.sistemas@gmail.com
+	name = AlexanderZon
