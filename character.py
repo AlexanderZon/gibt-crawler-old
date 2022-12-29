@@ -4,8 +4,12 @@ import re
 import html2text
 import sys
 import json
+from urllib.parse import urlparse
 
 url = None
+url_domain = None
+url_protocol = None
+url_base = None
 
 for i in range(1, len(sys.argv)):
     x = sys.argv[i].split("=", 1)
@@ -19,6 +23,9 @@ for i in range(1, len(sys.argv)):
     match(option):
         case '--url':
             url = value
+            url_domain = urlparse(url).netloc
+            url_protocol = urlparse(url).scheme
+            url_base = url_protocol+'://'+url_domain
         case _:
             continue
 
@@ -145,7 +152,32 @@ def getSkillsTableInfo(html):
                 asc_data['materials'].append({ 'name': name, 'quantity': quantity})
             skills.append(asc_data)
     return skills
+
+def getFileFullURL(endpoint):
+    return url_base+endpoint
             
+def getGallerySectionInfo(html):
+    gallery_section = re.findall(r'<section id="char_gallery" class="tab-panel tab-panel-1">(.+?)</section>', html)
+    gallery = []
+    if(len(gallery_section) > 0):
+        gallery_section_content = re.findall(r'<div class="gallery_cont">(.+?)</div>', gallery_section[0])
+        for i in range(len(gallery_section_content)):
+            gallery_element = re.findall(r'<a target="_blank" href="(.+?)"><span class="gallery_cont_span">(.+?)</span>', gallery_section_content[i])
+            if(len(gallery_element) > 0 and len(gallery_element[0]) > 1):
+                file_url = getFileFullURL(gallery_element[0][0])
+                match(gallery_element[0][1]):
+                    case 'Icon':
+                        gallery.append({ 'type': 'icon', 'url': file_url})
+                    case 'Side Icon':
+                        gallery.append({ 'type': 'side_icon', 'url': file_url})
+                    case 'Gacha Card':
+                        gallery.append({ 'type': 'gacha_card', 'url': file_url})
+                    case 'Gacha Splash':
+                        gallery.append({ 'type': 'gacha_splash', 'url': file_url})
+    return gallery
+                
+    
+
 def requestCharacter():
     r = requests.get(url)
     if(r.status_code == 200):
@@ -153,6 +185,7 @@ def requestCharacter():
         character = getMainTableInfo(text)
         character['character_stats'] = getStatsTableInfo(text)
         character['character_skills'] = getSkillsTableInfo(text)
+        character['gallery'] = getGallerySectionInfo(text)
     return character
 
 def saveCharacterJSONFile(character):
@@ -172,5 +205,5 @@ def main():
     character = requestCharacter()
     saveCharacterJSONFile(character)
     storeCharacterData(character)
-
+    
 main()

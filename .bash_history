@@ -285,3 +285,9 @@ python character.py --url=https://genshin.honeyhunterworld.com/lisa_006/?lang=EN
 {"errors":["Character Stat Ascension Material \"Crown of Insight\" not found","Character Stat Ascension Material \"Crown of Insight\" not found","Character Stat Ascension Material \"Crown of Insight\" not found","Character Stat Ascension Material \"Crown of Insight\" not found","Character Stat Ascension Material \"Crown of Insight\" not found","Character Stat Ascension Material \"Crown of Insight\" not found","Character Skill Ascension Material \"Crown of Insight\" not found","Character Skill Ascension Material \"Crown of Insight\" not found","Character Skill Ascension Material \"Crown of Insight\" not found","Character Skill Ascension Material \"Crown of Insight\" not found","Character Skill Ascension Material \"Crown of Insight\" not found","Character Skill Ascension Material \"Crown of Insight\" not found","Character Skill Ascension Material \"Crown of Insight\" not found","Character Skill Ascension Material \"Crown of Insight\" not found","Character Skill Ascension 
 exit
 python character.py --url=https://genshin.honeyhunterworld.com/lisa_006/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/lisa_006/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/lisa_006/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/lisa_006/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/qin_003/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/qin_003/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/barbara_014/?lang=EN
