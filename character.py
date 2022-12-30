@@ -106,7 +106,9 @@ def getStatsTableInfo(html):
         stat_table_header = re.findall(r'<thead>(.+?)</thead>', stat_table[0])
         if(len(stat_table_header) > 0):
             stat_table_heder_columns = re.findall(r'<td>(.+?)</td>', stat_table_header[0])
-            if(len(stat_table_heder_columns) > 6): variable_stat = stat_table_heder_columns[6].replace("Bonus ", "")
+            if(len(stat_table_heder_columns) > 6): 
+                variable_stat = stat_table_heder_columns[6].replace("Bonus ", "")
+                variable_stat = variable_stat.replace("Bonuse ", "")
         stat_table_content = re.findall(r'<tr>(.+?)</tr>', stat_table[0])
         if(len(stat_table_content) > 0):
             stat_table_row_ascension_materials = None
