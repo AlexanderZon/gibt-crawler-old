@@ -1,43 +1,3 @@
-pwd
-python test.py
-pip install mysql
-python test.py
-python -v
-python --version
-python test.py
-pip install mysql-connector-python
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-pip install request
-pip install requests
-python test.py
-python test.py
-python test.py
-pip install html2text
-python test.py
-python test.py
-python test.py
-python test.py test
-https://genshin.honeyhunterworld.com/ayaka_002
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
 python test.py
 python test.py
 python test.py
@@ -291,3 +251,250 @@ python character.py --url=https://genshin.honeyhunterworld.com/lisa_006/?lang=EN
 python character.py --url=https://genshin.honeyhunterworld.com/qin_003/?lang=EN
 python character.py --url=https://genshin.honeyhunterworld.com/qin_003/?lang=EN
 python character.py --url=https://genshin.honeyhunterworld.com/barbara_014/?lang=EN
+weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+clear
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11201/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11301/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11302/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11303/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11304/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11305/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11306/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11401/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11402/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11403/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11404/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11405/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11406/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11407/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11408/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11409/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11410/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11412/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11413/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11414/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11415/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11416/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11417/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11418/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11419/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11421/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11422/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11501/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11502/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11503/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11504/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11505/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11509/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11510/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11511/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12101/?lang=EN
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14101/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11201/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12201/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13201/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15201/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14201/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11301/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11301/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11301/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11302/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11303/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11304/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11304/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11305/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11306/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12301/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12302/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12303/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12304/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12305/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12306/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13301/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13302/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13303/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15301/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15302/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15303/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15304/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15305/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15306/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14301/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14302/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14303/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14304/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14305/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14306/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11401/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11402/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11403/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11404/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11405/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11406/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11407/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11408/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11409/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11410/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11412/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11413/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11414/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11415/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11416/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11416/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11417/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11418/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11419/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11419/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11421/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11422/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12401/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12402/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12403
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12404
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12405
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12406
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12407
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12408
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12409
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12410
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12411
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12412
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12413
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12414
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12415
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12416
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13401/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13403
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13404
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13405
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13406
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13407
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13408
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13409
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13414
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13415
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13416
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13417
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13419
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15401/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15403
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15404
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n1540
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15405
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15406
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15407
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15408
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15409
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15410
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15411
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n1541
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15412
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15413
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15414
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15415
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15416
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15417
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14401/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14403
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14404
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14405
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14406
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14407
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14408
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14409
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14410
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14411
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14411
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14412
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14413
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14414
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14415
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14416
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14417
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11501/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11502
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11503
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11504
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11505
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11509
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11510
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11511
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12501/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12502
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12503
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12504
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12510
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13501/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13502
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13504
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13505
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13507
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13509
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n13511
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15501/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15502
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15503
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15507
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15508
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15509
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n15511
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14501/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14502
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14504
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14506
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14509
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14511
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14512

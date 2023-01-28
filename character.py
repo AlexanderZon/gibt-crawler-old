@@ -42,17 +42,6 @@ def parseSufixes(quantity):
         quantity = quantity.replace('K', '000')
     return quantity
 
-def connect():
-    conn = mysql.connector.connect(host="gibt_database", user="gibt", password="q1w2e3r4t5", database="gibt")
-    cursor = conn.cursor()
-    sql = """SELECT * FROM characters"""
-    try:
-        cursor.execute(sql)
-        result = cursor.fetchall()
-        print(result)
-    except mysql.connector.errors.IntegrityError as e:
-        print(e.msg)
-
 def getMainTableInfo(html):
     main_table = re.findall(r'<table class="genshin_table main_table">(.+?)</table>', html)
     main_info = {}
@@ -176,9 +165,7 @@ def getGallerySectionInfo(html):
                         gallery.append({ 'type': 'gacha_card', 'url': file_url})
                     case 'Gacha Splash':
                         gallery.append({ 'type': 'gacha_splash', 'url': file_url})
-    return gallery
-                
-    
+    return gallery  
 
 def requestCharacter():
     r = requests.get(url)
@@ -191,7 +178,7 @@ def requestCharacter():
     return character
 
 def saveCharacterJSONFile(character):
-    json_file = open(".data/"+character['name']+'.json', "w")
+    json_file = open(".data/characters/"+character['name']+'.json', "w")
     json_file.write(json.dumps(character))
     json_file.close()
 
