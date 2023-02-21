@@ -32,11 +32,6 @@ python test.py
 python test.py
 python test.py
 python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
 python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
 python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
 python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
@@ -498,3 +493,8 @@ python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14506
 python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14509
 python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14511
 python weapon.py --url=https://genshin.honeyhunterworld.com/i_n14512
+character.py --url=https://genshin.honeyhunterworld.com/yaoyao_077/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/yaoyao_077/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/alhatham_078/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN

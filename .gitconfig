@@ -1,7 +1,7 @@
 [core]
 	editor = \"C:\\Users\\amont\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
 [credential]
-	helper = "!f() { /root/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/node /tmp/vscode-remote-containers-8fa52047a3eb4b8223b7a5bd97edd51496efa8db.js $*; }; f"
+	helper = "!f() { /root/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/node /tmp/vscode-remote-containers-0297c78c0db7b7f69f57f2fe6c21281dbd25e4d6.js git-credential-helper $*; }; f"
 [init]
 	defaultBranch = master
 [user]

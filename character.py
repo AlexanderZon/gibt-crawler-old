@@ -45,6 +45,7 @@ def parseSufixes(quantity):
 def getMainTableInfo(html):
     main_table = re.findall(r'<table class="genshin_table main_table">(.+?)</table>', html)
     main_info = {}
+    # main_info['description'] = None
     if(len(main_table) > 0):
         main_table_rows = re.findall(r'<tr>(.+?)</tr>', main_table[0])
         for i in range(len(main_table_rows)):
@@ -85,6 +86,7 @@ def getMainTableInfo(html):
                     if("seuyu" in row[0].lower()):
                         continue
                     main_info[row[0].lower()] = cleanHtml(row[1])
+    if(not('description' in main_info)): main_info['description'] = '(Without description)'
     return main_info
 
 def getStatsTableInfo(html):
