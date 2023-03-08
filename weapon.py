@@ -28,6 +28,10 @@ for i in range(1, len(sys.argv)):
         case _:
             continue
 
+def cleanText(text):
+    text = text.replace('"', '')
+    return text
+
 def getMainTableInfo(html):
     main_table = re.findall(r'<table class="genshin_table main_table">(.+?)</table>', html)
     main_info = {
@@ -45,7 +49,7 @@ def getMainTableInfo(html):
                 case "Name":
                     main_info['Name'.lower()] = cleanHtml(row[1])
                 case "Rarity":
-                    stars = re.findall(r'<img class="cur_icon" src="/img/icons/star_35.webp" />', row[1])     
+                    stars = re.findall(r'<img alt=Raritystr class=cur_icon src=(.+?)?x53470>', row[1])
                     main_info[row[0].lower()] = len(stars)
                 case "Family":
                     weapon_type = re.findall(r'\[(.+?)\]', cleanHtml(row[1]))
@@ -66,7 +70,7 @@ def getMainTableInfo(html):
                 case "Affix Description":
                     main_info['Description'.lower()] = cleanHtml(row[1])
                 case "Weapon Ascension Materials":
-                    ascension_materials = re.findall(r'<img loading="lazy" alt="(.+?)" src="/img/', row[1]) 
+                    ascension_materials = re.findall(r'<img loading=lazy alt="(.+?)" src=', row[1]) 
                     main_info['ascension_materials'] = ascension_materials
     return main_info
 
@@ -86,7 +90,7 @@ def getStatsTableInfo(html, weapon):
             stat_table_row_ascension_materials = None
             for i in range(1, len(stat_table_content)):
                 stat_table_content_columns = re.findall(r'<td>(.+?)</td>', stat_table_content[i])
-                stat_table_content_advanced_columns = re.findall(r'<td rowspan="2">(.+?)</td>', stat_table_content[i])
+                stat_table_content_advanced_columns = re.findall(r'<td rowspan=2>(.+?)</td>', stat_table_content[i])
                 stat_data = {}
                 stat_data['level'] = stat_table_content_columns[0]
                 stat_data['atk'] = stat_table_content_columns[1]
@@ -97,13 +101,13 @@ def getStatsTableInfo(html, weapon):
                 
                 if "+" in stat_data['level']:
                     for j in range(len(stat_table_row_ascension_materials)):
-                        name = cleanHtml(stat_table_row_ascension_materials[j][0])
-                        quantity = parseSufixes(cleanHtml(stat_table_row_ascension_materials[j][2]))
+                        name = cleanText(cleanHtml(stat_table_row_ascension_materials[j][0]))
+                        quantity = parseSufixes(cleanHtml(stat_table_row_ascension_materials[j][4]))
                         stat_data['materials'].append({ 'name': name, 'quantity': quantity})
                 stats.append(stat_data)
 
                 if(len(stat_table_content_advanced_columns) > 0):
-                    stat_table_row_ascension_materials = re.findall(r'<img loading="lazy" alt="(.+?)" src="/img/(.+?).webp"><span>(.+?)</span>', stat_table_content_advanced_columns[0])
+                    stat_table_row_ascension_materials = re.findall(r'<img loading=lazy alt=(.+?) src=(.+?)?x53470 width=(.+?) height=(.+?)><span>(.+?)</span>', stat_table_content_advanced_columns[0])
     return stats
 
 def getFileFullURL(endpoint):
