@@ -2,3 +2,5 @@
 .cache
 .vscode-server
 .data
+.dotnet
+.bash_history

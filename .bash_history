@@ -13,25 +13,6 @@ python test.py
 python test.py
 python test.py
 python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
 python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
 python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
 python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
@@ -497,4 +478,23 @@ character.py --url=https://genshin.honeyhunterworld.com/yaoyao_077/?lang=EN
 python character.py --url=https://genshin.honeyhunterworld.com/yaoyao_077/?lang=EN
 python character.py --url=https://genshin.honeyhunterworld.com/alhatham_078/?lang=EN
 python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11512/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+clear
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+clear
+python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/mika_080/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12511/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/mika_080/?lang=EN
+python character.py --url=https://genshin.honeyhunterworld.com/mika_080/?lang=EN
 python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
