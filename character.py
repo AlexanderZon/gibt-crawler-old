@@ -11,6 +11,9 @@ url_domain = None
 url_protocol = None
 url_base = None
 
+api_host_protocol = 'http'
+api_host_url = 'gibt'
+
 for i in range(1, len(sys.argv)):
     x = sys.argv[i].split("=", 1)
     option = x[0]
@@ -51,17 +54,17 @@ def getMainTableInfo(html):
         for i in range(len(main_table_rows)):
             row = re.findall(r'<td>(.+?)</td>', main_table_rows[i])
             match row[0]:
-                case "Rarity":
-                    stars = re.findall(r'<img class="cur_icon" src="/img/icons/star_35.webp" />', row[1])     
-                    main_info[row[0].lower()] = len(stars)
+                case "Rarity":   
+                    stars = row[1].count('<img alt=Raritystr class=cur_icon src=/img/icons/star_35.webp')
+                    main_info[row[0].lower()] = stars
                 case "Weapon":
-                    weapon = re.findall(r'<img loading="lazy" class="cur_icon" src="/img/icons/weapon_types/(.+?)_35.webp">&nbsp;', row[1])     
+                    weapon = re.findall('/img/icons/weapon_types/(.+?)_35.webp', row[1])     
                     if(len(weapon) > 0):
                         main_info['weapon_type'] = weapon[0].capitalize()
                     else:
                         main_info['weapon_type'] = 'unknown'
                 case "Element":
-                    element = re.findall(r'<img loading="lazy" class="cur_icon" src="/img/icons/element/(.+?)_35.webp">&nbsp;', row[1])     
+                    element = re.findall('<img loading=lazy alt=Element class=cur_icon src=/img/icons/element/(.+?)_35.webp', row[1])     
                     if(len(element) > 0):
                         main_info[row[0].lower()] = element[0].capitalize()
                     else:
@@ -73,10 +76,10 @@ def getMainTableInfo(html):
                 case "Association":
                     main_info['Association'.lower()] = row[1].capitalize()
                 case "Character Ascension Materials":
-                    ascension_materials = re.findall(r'<img loading="lazy" alt="(.+?)" src="/img/', row[1]) 
+                    ascension_materials = re.findall(r'<img loading=lazy alt="(.+?)" src=/img/', row[1]) 
                     main_info['ascension_materials'] = ascension_materials
                 case "Skill Ascension Materials":
-                    ascension_materials = re.findall(r'<img loading="lazy" alt="(.+?)" src="/img/', row[1]) 
+                    ascension_materials = re.findall(r'<img loading=lazy alt="(.+?)" src=/img/', row[1]) 
                     main_info['skill_ascension_materials'] = ascension_materials
                 case "Day of Birth":
                     main_info['day_of_birth'] = row[1]
@@ -105,7 +108,7 @@ def getStatsTableInfo(html):
             stat_table_row_ascension_materials = None
             for i in range(1, len(stat_table_content)):
                 stat_table_content_columns = re.findall(r'<td>(.+?)</td>', stat_table_content[i])
-                stat_table_content_advanced_columns = re.findall(r'<td rowspan="2" class="hmb">(.+?)</td>', stat_table_content[i])
+                stat_table_content_advanced_columns = re.findall(r'<td rowspan=2 class=hmb>(.+?)</td>', stat_table_content[i])
                 stat_data = {}
                 stat_data['level'] = stat_table_content_columns[0]
                 stat_data['hp'] = stat_table_content_columns[1]
@@ -125,7 +128,10 @@ def getStatsTableInfo(html):
                 stats.append(stat_data)
 
                 if(len(stat_table_content_advanced_columns) > 0):
-                    stat_table_row_ascension_materials = re.findall(r'<img loading="lazy" alt="(.+?)" src="/img/(.+?).webp"><span>(.+?)</span>', stat_table_content_advanced_columns[0])
+                    stat_table_row_ascension_materials = re.findall(r'<img loading=lazy alt="(.+?)"(.+?)><span>(.+?)</span>', stat_table_content_advanced_columns[0])
+                    stat_table_row_mora = re.findall(r'<img loading=lazy alt=Mora (.+?)><span>(.+?)</span>', stat_table_content_advanced_columns[0])
+                    mora_row_tuple = ("Mora", stat_table_row_mora[0][0], stat_table_row_mora[0][1])
+                    stat_table_row_ascension_materials.append(mora_row_tuple)
     return stats
 
 def getSkillsTableInfo(html):
@@ -135,7 +141,8 @@ def getSkillsTableInfo(html):
         asc_table_content = re.findall(r'<tr>(.+?)</tr>', asc_table[0])
         for i in range(2, len(asc_table_content)):
             asc_table_content_columns = re.findall(r'<td>(.+?)</td>', asc_table_content[i])
-            asc_table_row_ascension_materials = re.findall(r'<img loading="lazy" alt="(.+?)" src="/img/(.+?).webp"><span>(.+?)</span></div></a>', asc_table_content_columns[1])
+            asc_table_row_ascension_materials = re.findall(r'<img loading=lazy alt="(.+?)"(.+?)><span>(.+?)</span></div></a>', asc_table_content_columns[1])
+            asc_table_row_mora = re.findall(r'<img loading=lazy alt=Mora(.+?)><span>(.+?)</span></div></a>', asc_table_content_columns[1])
             asc_data = {}
             asc_data['level'] = asc_table_content_columns[0]
             asc_data['materials'] = []
@@ -143,6 +150,9 @@ def getSkillsTableInfo(html):
                 name = cleanHtml(asc_table_row_ascension_materials[j][0])
                 quantity = parseSufixes(cleanHtml(asc_table_row_ascension_materials[j][2]))
                 asc_data['materials'].append({ 'name': name, 'quantity': quantity})
+            name = "Mora"
+            quantity = parseSufixes(cleanHtml(asc_table_row_mora[0][1]))
+            asc_data['materials'].append({ 'name': name, 'quantity': quantity})
             skills.append(asc_data)
     return skills
 
@@ -150,12 +160,12 @@ def getFileFullURL(endpoint):
     return url_base+endpoint
             
 def getGallerySectionInfo(html):
-    gallery_section = re.findall(r'<section id="char_gallery" class="tab-panel tab-panel-1">(.+?)</section>', html)
+    gallery_section = re.findall(r'<section id=char_gallery class="tab-panel tab-panel-1">(.+?)</section>', html)
     gallery = []
     if(len(gallery_section) > 0):
-        gallery_section_content = re.findall(r'<div class="gallery_cont">(.+?)</div>', gallery_section[0])
+        gallery_section_content = re.findall(r'<div class=gallery_cont>(.+?)</div>', gallery_section[0])
         for i in range(len(gallery_section_content)):
-            gallery_element = re.findall(r'<a target="_blank" href="(.+?)"><span class="gallery_cont_span">(.+?)</span>', gallery_section_content[i])
+            gallery_element = re.findall(r'<a target=_blank href=(.+?)><span class=gallery_cont_span>(.+?)</span>', gallery_section_content[i])
             if(len(gallery_element) > 0 and len(gallery_element[0]) > 1):
                 file_url = getFileFullURL(gallery_element[0][0])
                 match(gallery_element[0][1]):
@@ -167,7 +177,7 @@ def getGallerySectionInfo(html):
                         gallery.append({ 'type': 'gacha_card', 'url': file_url})
                     case 'Gacha Splash':
                         gallery.append({ 'type': 'gacha_splash', 'url': file_url})
-    return gallery  
+    return gallery
 
 def requestCharacter():
     r = requests.get(url)
@@ -185,7 +195,8 @@ def saveCharacterJSONFile(character):
     json_file.close()
 
 def storeCharacterData(character):
-    r = requests.post('http://gibt/api/crawler/characters', json = character)
+    url = api_host_protocol+'://'+api_host_url+'/api/crawler/characters'
+    r = requests.post(url, json = character)
     if(r.status_code == 200):
         text = r.text
         print('Response: ', text)

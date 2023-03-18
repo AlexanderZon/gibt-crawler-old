@@ -49,8 +49,8 @@ def getMainTableInfo(html):
                 case "Name":
                     main_info['Name'.lower()] = cleanHtml(row[1])
                 case "Rarity":
-                    stars = re.findall(r'<img alt=Raritystr class=cur_icon src=(.+?)?x53470>', row[1])
-                    main_info[row[0].lower()] = len(stars)
+                    stars = row[1].count('<img alt=Raritystr class=cur_icon src=/img/icons/star_35.webp')
+                    main_info[row[0].lower()] = stars
                 case "Family":
                     weapon_type = re.findall(r'\[(.+?)\]', cleanHtml(row[1]))
                     for j in range(len(weapon_type)):
@@ -102,24 +102,27 @@ def getStatsTableInfo(html, weapon):
                 if "+" in stat_data['level']:
                     for j in range(len(stat_table_row_ascension_materials)):
                         name = cleanText(cleanHtml(stat_table_row_ascension_materials[j][0]))
-                        quantity = parseSufixes(cleanHtml(stat_table_row_ascension_materials[j][4]))
+                        quantity = parseSufixes(cleanHtml(stat_table_row_ascension_materials[j][2]))
                         stat_data['materials'].append({ 'name': name, 'quantity': quantity})
                 stats.append(stat_data)
 
                 if(len(stat_table_content_advanced_columns) > 0):
-                    stat_table_row_ascension_materials = re.findall(r'<img loading=lazy alt=(.+?) src=(.+?)?x53470 width=(.+?) height=(.+?)><span>(.+?)</span>', stat_table_content_advanced_columns[0])
+                    stat_table_row_ascension_materials = re.findall(r'<img loading=lazy alt="(.+?)" (.+?)><span>(.+?)</span>', stat_table_content_advanced_columns[0])
+                    stat_table_row_mora = re.findall(r'<img loading=lazy alt=Mora (.+?)><span>(.+?)</span>', stat_table_content_advanced_columns[0])
+                    mora_row_tuple = ("Mora", stat_table_row_mora[0][0], stat_table_row_mora[0][1])
+                    stat_table_row_ascension_materials.append(mora_row_tuple)
     return stats
 
 def getFileFullURL(endpoint):
     return url_base+endpoint
 
 def getGallerySectionInfo(html):
-    gallery_section = re.findall(r'<section id="item_gallery" class="tab-panel tab-panel-1">(.+?)</section>', html)
+    gallery_section = re.findall(r'<section id=item_gallery class="tab-panel tab-panel-1">(.+?)</section>', html)
     gallery = []
     if(len(gallery_section) > 0):
-        gallery_section_content = re.findall(r'<div class="gallery_cont">(.+?)</div>', gallery_section[0])
+        gallery_section_content = re.findall(r'<div class=gallery_cont>(.+?)</div>', gallery_section[0])
         for i in range(len(gallery_section_content)):
-            gallery_element = re.findall(r'<a target="_blank" href="(.+?)"><span class="gallery_cont_span">(.+?)</span>', gallery_section_content[i])
+            gallery_element = re.findall(r'<a target=_blank href=(.+?)><span class=gallery_cont_span>(.+?)</span>', gallery_section_content[i])
             if(len(gallery_element) > 0 and len(gallery_element[0]) > 1):
                 file_url = getFileFullURL(gallery_element[0][0])
                 match(gallery_element[0][1]):

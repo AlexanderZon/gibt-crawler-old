@@ -1,31 +1,3 @@
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py
-python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url=https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url https://genshin.honeyhunterworld.com/aloy_062/?lang=EN
-python test.py --url https://genshin.honeyhunterworld.com/ayaka_002/?lang=EN
 python test.py --url https://genshin.honeyhunterworld.com/ayaka_002/?lang=EN
 python test.py --url https://genshin.honeyhunterworld.com/shenhe_063/?lang=EN
 python test.py --url https://genshin.honeyhunterworld.com/shenhe_063/?lang=EN
@@ -498,3 +470,31 @@ python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418/?lang=EN
 python weapon.py --url=https://genshin.honeyhunterworld.com/mika_080/?lang=EN
 python character.py --url=https://genshin.honeyhunterworld.com/mika_080/?lang=EN
 python character.py --url=https://genshin.honeyhunterworld.com/dehya_079/?lang=EN
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n11402
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+clear
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
+python weapon.py --url=https://genshin.honeyhunterworld.com/i_n12418
